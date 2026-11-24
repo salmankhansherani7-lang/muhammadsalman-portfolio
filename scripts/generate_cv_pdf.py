@@ -142,7 +142,7 @@ def generate_pdf(output_path):
     ]
     right_header = [
         Paragraph("<b>Rawalpindi / Islamabad, Pakistan</b>", header_right),
-        Paragraph("muhammadsalman@gmail.com", header_right)
+        Paragraph("muhammadsalman779912@gmail.com", header_right)
     ]
     header_table = Table([[left_header, right_header]], colWidths=[320, 220])
     header_table.setStyle(TableStyle([
