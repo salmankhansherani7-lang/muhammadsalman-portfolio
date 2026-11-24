@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /database/
+Disallow: /scripts/
+Allow: /
+Allow: /cv.php
+Allow: /assets/
+
+Sitemap: /sitemap.xml
+

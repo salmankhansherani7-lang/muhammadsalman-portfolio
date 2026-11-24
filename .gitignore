@@ -1,0 +1,6 @@
+# Local environment & temporary files
+.env
+*.log
+reference_cv.pdf
+.DS_Store
+Thumbs.db

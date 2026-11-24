@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#131c31"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#bg6)"/>
+  <rect x="50" y="50" width="500" height="260" rx="10" fill="rgba(15,23,42,0.7)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  <circle cx="75" cy="70" r="4" fill="#ef4444"/><circle cx="90" cy="70" r="4" fill="#f59e0b"/><circle cx="105" cy="70" r="4" fill="#10b981"/>
+  <line x1="50" y1="90" x2="550" y2="90" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="75" y="110" width="130" height="70" rx="6" fill="rgba(30,41,59,0.6)" stroke="#6366f1" stroke-width="1"/>
+  <text x="90" y="135" fill="#94a3b8" font-family="sans-serif" font-size="10">Telemetry Line 01</text>
+  <text x="90" y="160" fill="#38bdf8" font-family="monospace" font-size="16" font-weight="bold">142.8 PSI</text>
+  <rect x="220" y="110" width="130" height="70" rx="6" fill="rgba(30,41,59,0.6)" stroke="#10b981" stroke-width="1"/>
+  <text x="235" y="135" fill="#94a3b8" font-family="sans-serif" font-size="10">Status</text>
+  <text x="235" y="160" fill="#10b981" font-family="monospace" font-size="16" font-weight="bold">NOMINAL</text>
+  <rect x="365" y="110" width="160" height="70" rx="6" fill="rgba(30,41,59,0.6)" stroke="#ec4899" stroke-width="1"/>
+  <text x="380" y="135" fill="#94a3b8" font-family="sans-serif" font-size="10">Modbus RTU Latency</text>
+  <text x="380" y="160" fill="#ec4899" font-family="monospace" font-size="16" font-weight="bold">8.4 ms</text>
+  <path d="M75,270 L130,230 L190,245 L250,210 L310,225 L380,195 L450,215 L525,190" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+</svg>

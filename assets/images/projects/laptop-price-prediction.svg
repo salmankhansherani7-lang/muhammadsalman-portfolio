@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1021"/>
+      <stop offset="100%" stop-color="#161d36"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#bg1)"/>
+  <g opacity="0.15" stroke="#38bdf8" stroke-width="1">
+    <line x1="50" y1="60" x2="550" y2="60" stroke-dasharray="4,4"/>
+    <line x1="50" y1="120" x2="550" y2="120" stroke-dasharray="4,4"/>
+    <line x1="50" y1="180" x2="550" y2="180" stroke-dasharray="4,4"/>
+    <line x1="50" y1="240" x2="550" y2="240" stroke-dasharray="4,4"/>
+    <line x1="50" y1="300" x2="550" y2="300"/>
+    <line x1="50" y1="60" x2="50" y2="300"/>
+  </g>
+  <g fill="#a855f7" opacity="0.75">
+    <circle cx="80" cy="280" r="4"/><circle cx="110" cy="270" r="3.5"/><circle cx="140" cy="250" r="5"/>
+    <circle cx="165" cy="230" r="4"/><circle cx="190" cy="225" r="4.5"/><circle cx="210" cy="210" r="4"/>
+    <circle cx="240" cy="195" r="5"/><circle cx="270" cy="180" r="4"/><circle cx="300" cy="175" r="5.5"/>
+    <circle cx="330" cy="150" r="4"/><circle cx="360" cy="140" r="4.5"/><circle cx="390" cy="130" r="4"/>
+    <circle cx="420" cy="110" r="5"/><circle cx="450" cy="95" r="4"/><circle cx="490" cy="80" r="5"/>
+    <circle cx="520" cy="70" r="4.5"/>
+  </g>
+  <line x1="60" y1="290" x2="540" y2="65" stroke="url(#lineGrad)" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="70" y="45" fill="#38bdf8" font-family="monospace" font-size="14" font-weight="bold">R² Score: 0.942 | MSE: 0.018</text>
+  <rect x="390" y="260" width="160" height="50" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="405" y="285" fill="#e2e8f0" font-family="sans-serif" font-size="12" font-weight="bold">Gradient Boosting</text>
+  <text x="405" y="300" fill="#94a3b8" font-family="sans-serif" font-size="10">Feature-Weighted Regressor</text>
+</svg>
