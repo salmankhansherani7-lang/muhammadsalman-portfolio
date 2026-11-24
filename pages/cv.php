@@ -1,15 +1,11 @@
 <?php
 /**
  * Dedicated CV Preview Page
- * Muhammad Salman - AI Engineer
+ * Muhammad Salman - AI Engineer • Prompt Programmer
  */
 
 defined('SECURE_ACCESS') or die('Direct access forbidden.');
 
-$profile = get_profile();
-$cvData = get_cv_data();
-$headerData = $cvData['header']['data'] ?? [];
-$summaryData = $cvData['summary']['data'] ?? [];
 $pdfUrl = asset('assets/docs/Muhammad_Salman_CV.pdf');
 ?>
 <!DOCTYPE html>
@@ -17,8 +13,8 @@ $pdfUrl = asset('assets/docs/Muhammad_Salman_CV.pdf');
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae • Muhammad Salman | AI Engineer</title>
-  <meta name="description" content="Executive Curriculum Vitae of Muhammad Salman, AI Engineer specializing in Machine Learning, Generative AI Agents, and Embedded Robotics.">
+  <title>Curriculum Vitae • M Salman | AI Engineer • Prompt Programmer</title>
+  <meta name="description" content="Official Curriculum Vitae of M Salman, AI Engineer and Prompt Programmer.">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="<?= asset('assets/images/favicon.svg') ?>">
@@ -61,97 +57,161 @@ $pdfUrl = asset('assets/docs/Muhammad_Salman_CV.pdf');
       </div>
     </div>
 
-    <!-- The ATS CV Document (Stops strictly at Programming Languages) -->
+    <!-- The Exact ATS CV Document -->
     <div class="cv-document">
-      <!-- 1. Personal Header and Contact Details -->
+      <!-- Header -->
       <div class="cv-header">
         <div>
-          <h1 class="cv-header-name">MUHAMMAD SALMAN</h1>
-          <div class="cv-header-role">AI ENGINEER • MACHINE LEARNING & ROBOTICS ARCHITECT</div>
+          <h1 class="cv-header-name">M SALMAN</h1>
+          <div class="cv-header-role">AI ENGINEER • PROMPT PROGRAMMER</div>
         </div>
         <div class="cv-header-meta">
-          <div><strong>Islamabad & Rawalpindi, Pakistan</strong></div>
-          <div>PEC Registered • UTC+5 (Remote Ready)</div>
-          <div>contact@muhammadsalman.ai</div>
+          <div><strong>Rawalpindi / Islamabad, Pakistan</strong></div>
+          <div>muhammadsalman@gmail.com</div>
         </div>
       </div>
 
-      <!-- Contact Bar -->
+      <!-- Contact Sub Bar -->
       <div class="cv-contact-bar">
-        +92 300 1234567 &nbsp;•&nbsp;
-        contact@muhammadsalman.ai &nbsp;•&nbsp;
-        linkedin.com/in/muhammad-salman-ai &nbsp;•&nbsp;
-        github.com/salmankhansherani7-lang
+        0332-7768335 &nbsp;•&nbsp; muhammadsalman@gmail.com
       </div>
 
-      <!-- 2. Professional Summary -->
+      <!-- 1. Professional Summary -->
       <div class="cv-section">
         <h2 class="cv-section-title">PROFESSIONAL SUMMARY</h2>
         <p class="cv-summary-text">
-          <?= e($summaryData['text'] ?? "AI Engineer with extensive hands-on expertise bridging deep neural architectures with physical microcontrollers, autonomous multi-agent frameworks, and high-performance web systems. Proven track record architecting 99.4% accurate facial recognition pipelines (YOLOv8 + MediaPipe), RAG (Retrieval-Augmented Generation) vector systems, serverless ESP32/ESP-NOW wireless mesh telemetry networks, and enterprise web platforms. Skilled in designing scalable, secure full-stack architectures and delivering corporate AI instruction across Python, Machine Learning, and Robotics.") ?>
+          Motivated and customer-focused professional, Intermediate (ICS) qualified and currently pursuing a BS in Computer Science (BSCS), with a strong foundation in Computer Science, Mathematics, and Physics. Brings two years of hands-on experience running an e-commerce dropshipping business, managing customer support, digital marketing campaigns, and supplier relationships. Holds Huawei certificates in AI, 5G and Cloud Computing and has completed an AI Advanced & Professional course at Corvit Institute of Information Technology. Analytical and detail-oriented, with solid skills in data tracking, reporting, and problem-solving, plus strong bilingual communication in English and Urdu. Quick to learn new systems and eager to bring proven customer service and marketing skills to a call center and marketing development role.
         </p>
       </div>
 
-      <!-- 3. Technical Core Competencies (Sections 3 to 8, stopping strictly at Programming Languages) -->
+      <!-- 2. Work Experience -->
       <div class="cv-section">
-        <h2 class="cv-section-title">TECHNICAL CORE COMPETENCIES</h2>
+        <h2 class="cv-section-title">WORK EXPERIENCE</h2>
+        <div style="font-weight: 700; font-size: 0.9rem; color: #0f172a; margin-bottom: 0.35rem;">
+          E-Commerce Dropshipping Operator (Self-Employed) • Online Retail Business — Remote • 2 Years
+        </div>
+        <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.85rem; color: #334155; line-height: 1.55;">
+          <li style="margin-bottom: 0.25rem;">Provided responsive, friendly customer support via chat and email, resolving order and product inquiries to maintain high customer satisfaction and encourage repeat business.</li>
+          <li style="margin-bottom: 0.25rem;">Planned and ran social media marketing campaigns (Facebook & Instagram) to drive website traffic, generate leads, and increase online sales.</li>
+          <li style="margin-bottom: 0.25rem;">Built and maintained strong relationships with suppliers and vendors, negotiating pricing and coordinating timely order fulfillment.</li>
+          <li style="margin-bottom: 0.25rem;">Tracked sales, inventory levels, and campaign performance using Google Sheets and MS Excel, using the data to make informed business decisions.</li>
+          <li>Handled day-to-day business operations independently, developing strong self-management, organization, and problem-solving skills.</li>
+        </ul>
+      </div>
+
+      <!-- 3. Education -->
+      <div class="cv-section">
+        <h2 class="cv-section-title">EDUCATION</h2>
         <div class="cv-competencies-grid">
-          <!-- 4. AI, Machine Learning & Computer Vision -->
           <div class="cv-comp-card">
-            <h3 class="cv-comp-title">AI, Machine Learning & Computer Vision:</h3>
-            <p class="cv-comp-body">
-              PyTorch, TensorFlow, Keras, Scikit-Learn, OpenCV, Ultralytics YOLOv8, MediaPipe Face Mesh, CNNs, Facial Landmark Alignment, Anti-spoofing Blink Detection, Scipy, NumPy, Pandas.
-            </p>
+            <div class="cv-comp-title" style="color: #2563eb;">Bachelor of Science in Computer Science (BSCS)</div>
+            <div class="cv-comp-body">Status: Continuing / In Progress</div>
           </div>
-
-          <!-- 5. Generative AI & Autonomous Multi-Agents -->
           <div class="cv-comp-card">
-            <h3 class="cv-comp-title">Generative AI & Autonomous Multi-Agents:</h3>
-            <p class="cv-comp-body">
-              CrewAI, LangChain, LangGraph Architecture, Multi-Agent Collaboration, RAG Architecture, Vector DBs (ChromaDB, FAISS), OpenAI & Claude Tool-Use, Function Calling, Prompt Tuning, n8n.
-            </p>
-          </div>
-
-          <!-- 6. Robotics & Embedded IoT Systems -->
-          <div class="cv-comp-card">
-            <h3 class="cv-comp-title">Robotics & Embedded IoT Systems:</h3>
-            <p class="cv-comp-body">
-              ESP32 Microcontrollers, ESP-NOW Mesh Protocol (Sub-20ms wireless latency), Arduino C++, Raspberry Pi, Sensor Fusion (Ultrasonic, PIR, DHT22, LDR), Motor Actuation (L298N, Servos), Wokwi.
-            </p>
-          </div>
-
-          <!-- 7. Full-Stack Web & API Architecture -->
-          <div class="cv-comp-card">
-            <h3 class="cv-comp-title">Full-Stack Web & API Architecture:</h3>
-            <p class="cv-comp-body">
-              PHP & MySQL, Modern JavaScript (ES6+), React.js, Node.js, Tailwind CSS, Alpine.js, RESTful APIs, JSON, Google OAuth 2.0, Firebase, Figma UI/UX Design Systems.
-            </p>
-          </div>
-
-          <!-- 8. Programming Languages (FINAL SECTION - NO FURTHER SECTIONS) -->
-          <div class="cv-comp-card">
-            <h3 class="cv-comp-title">Programming Languages:</h3>
-            <p class="cv-comp-body">
-              Python (Advanced OOP / Asynchronous / Scientific Stack), C++ (Firmware & Pointers), JavaScript (ES6+, DOM, Async/Await), PHP (Modern 8+, PDO), SQL (PostgreSQL, MySQL, SQLite).
-            </p>
-          </div>
-
-          <!-- DevOps & Systems Environment -->
-          <div class="cv-comp-card">
-            <h3 class="cv-comp-title">DevOps, Environments & Systems:</h3>
-            <p class="cv-comp-body">
-              Git, GitHub Actions, Docker, CI/CD, Linux/Bash, VS Code, Google Colab, Technical Instruction, STEM Curriculum Design, Engineering Team Leadership.
-            </p>
+            <div class="cv-comp-title" style="color: #2563eb;">Intermediate in Computer Science (ICS)</div>
+            <div class="cv-comp-body">Concentration: Computer Science, Mathematics & Physics</div>
           </div>
         </div>
       </div>
 
-      <!-- CV Footer Notice -->
+      <!-- 4. Certifications & Courses -->
+      <div class="cv-section">
+        <h2 class="cv-section-title">CERTIFICATIONS & COURSES</h2>
+        <div class="cv-competencies-grid">
+          <div class="cv-comp-card">
+            <div class="cv-comp-title" style="color: #0f172a;">Huawei Certificates</div>
+            <div class="cv-comp-body">
+              • 5G Basics: What It's All About<br>
+              • Overview of AI<br>
+              • 5G Network Architecture and Key Technologies<br>
+              • Search and AI<br>
+              • Development and Basic Concepts of Cloud Computing
+            </div>
+          </div>
+          <div class="cv-comp-card">
+            <div class="cv-comp-title" style="color: #0f172a;">Corvit Institute of Information Technology</div>
+            <div class="cv-comp-body">
+              • AI Advanced & Professional Course
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Key Qualities -->
+      <div class="cv-section">
+        <h2 class="cv-section-title">KEY QUALITIES</h2>
+        <div class="cv-competencies-grid">
+          <div class="cv-comp-card">
+            <div style="margin-bottom: 0.5rem;">
+              <div class="cv-comp-title" style="color: #2563eb; margin-bottom: 0.15rem;">Strong Communicator</div>
+              <div class="cv-comp-body">Clear, friendly, and patient when explaining things or resolving issues.</div>
+            </div>
+            <div style="margin-bottom: 0.5rem;">
+              <div class="cv-comp-title" style="color: #2563eb; margin-bottom: 0.15rem;">Problem Solver</div>
+              <div class="cv-comp-body">Stays calm under pressure and finds practical solutions quickly.</div>
+            </div>
+            <div>
+              <div class="cv-comp-title" style="color: #2563eb; margin-bottom: 0.15rem;">Adaptable & Quick Learner</div>
+              <div class="cv-comp-body">Comfortable picking up new tools, systems, and processes.</div>
+            </div>
+          </div>
+          <div class="cv-comp-card">
+            <div style="margin-bottom: 0.5rem;">
+              <div class="cv-comp-title" style="color: #2563eb; margin-bottom: 0.15rem;">Team Player</div>
+              <div class="cv-comp-body">Works well with suppliers, customers, and colleagues to get results.</div>
+            </div>
+            <div style="margin-bottom: 0.5rem;">
+              <div class="cv-comp-title" style="color: #2563eb; margin-bottom: 0.15rem;">Self-Motivated</div>
+              <div class="cv-comp-body">Managed a business independently with strong discipline and ownership.</div>
+            </div>
+            <div>
+              <div class="cv-comp-title" style="color: #2563eb; margin-bottom: 0.15rem;">Detail-Oriented</div>
+              <div class="cv-comp-body">Careful and accurate when tracking data, orders, and reports.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Skills -->
+      <div class="cv-section">
+        <h2 class="cv-section-title">SKILLS</h2>
+        <div class="cv-competencies-grid">
+          <div class="cv-comp-card">
+            <div style="margin-bottom: 0.5rem;">
+              <div class="cv-comp-title" style="color: #2563eb; margin-bottom: 0.15rem;">MS Excel & MS Word</div>
+              <div class="cv-comp-body">Preparing reports, tracking sheets, and business documents with strong formatting and formula skills.</div>
+            </div>
+            <div style="margin-bottom: 0.5rem;">
+              <div class="cv-comp-title" style="color: #2563eb; margin-bottom: 0.15rem;">Customer Service & Support</div>
+              <div class="cv-comp-body">Handling customer queries and complaints via chat/email with a friendly, solution-focused approach.</div>
+            </div>
+            <div>
+              <div class="cv-comp-title" style="color: #2563eb; margin-bottom: 0.15rem;">Supplier & Vendor Coordination</div>
+              <div class="cv-comp-body">Negotiating pricing and coordinating with suppliers to ensure timely, reliable order fulfillment.</div>
+            </div>
+          </div>
+          <div class="cv-comp-card">
+            <div style="margin-bottom: 0.5rem;">
+              <div class="cv-comp-title" style="color: #2563eb; margin-bottom: 0.15rem;">Google Sheets & Data Tracking</div>
+              <div class="cv-comp-body">Monitoring sales, inventory, and campaign performance to support day-to-day decisions.</div>
+            </div>
+            <div style="margin-bottom: 0.5rem;">
+              <div class="cv-comp-title" style="color: #2563eb; margin-bottom: 0.15rem;">Social Media & Digital Marketing</div>
+              <div class="cv-comp-body">Planning and running Facebook & Instagram campaigns to generate leads and drive online sales.</div>
+            </div>
+            <div>
+              <div class="cv-comp-title" style="color: #2563eb; margin-bottom: 0.15rem;">Bilingual Communication</div>
+              <div class="cv-comp-body">Fluent in English and Urdu, written and spoken, for clear customer and team communication.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Document Footer -->
       <div class="cv-footer-notice">
-        Curriculum Vitae • Muhammad Salman • AI Engineer • Verified Digital Portfolio
+        Curriculum Vitae • M Salman • AI Engineer • Prompt Programmer
       </div>
     </div>
   </div>
 </body>
 </html>
-

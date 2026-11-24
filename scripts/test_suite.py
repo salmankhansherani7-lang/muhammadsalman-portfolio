@@ -39,15 +39,16 @@ def test_cv_page():
     resp = opener.open(f"{BASE}/cv.php")
     assert resp.status == 200, f"Expected 200, got {resp.status}"
     html = resp.read().decode('utf-8')
-    assert "MUHAMMAD SALMAN" in html, "CV missing MUHAMMAD SALMAN"
+    assert "SALMAN" in html, "CV missing SALMAN"
     assert "AI ENGINEER" in html, "CV missing AI ENGINEER"
-    assert "TECHNICAL CORE COMPETENCIES" in html, "CV missing competencies"
-    assert "Programming Languages:" in html, "CV missing Programming Languages"
-    # Ensure no subsequent sections on CV
-    assert "FLAGSHIP ENGINEERING PROJECTS" not in html, "CV includes forbidden flagship projects section!"
-    assert "WORK EXPERIENCE" not in html, "CV includes forbidden work experience section!"
+    assert "WORK EXPERIENCE" in html, "CV missing WORK EXPERIENCE"
+    assert "EDUCATION" in html, "CV missing EDUCATION"
+    assert "CERTIFICATIONS & COURSES" in html, "CV missing CERTIFICATIONS & COURSES"
+    assert "KEY QUALITIES" in html, "CV missing KEY QUALITIES"
+    assert "SKILLS" in html, "CV missing SKILLS"
     assert "Kaggle" not in html, "CV includes forbidden Kaggle!"
-    print("  [PASS] CV Page verified (Stops strictly at Programming Languages).")
+    assert "Aamir" not in html, "CV includes forbidden Aamir!"
+    print("  [PASS] CV Page verified (Updated user CV structure verified).")
 
 def test_unauthorized_admin_access():
     print("Testing GET /admin/index.php without login ...")

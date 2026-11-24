@@ -76,3 +76,4 @@ def generate_static_pages():
 
 if __name__ == "__main__":
     generate_static_pages()
+
